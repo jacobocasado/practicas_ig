@@ -179,7 +179,7 @@ Escena1::Escena1()
 {
    using namespace std ;
    cout << "Creando objetos de escena 1 .... " << flush ;
-
+    
    // añadir el objeto 'Cubo' a la lista de objetos de esta escena:
    objetos.push_back( new Cubo() );
 
@@ -250,6 +250,9 @@ Escena4::Escena4()
 {
    using namespace std ;
    cout << "Creando objetos de escena 4 .... " << flush ;
+    
+    // Examen
+    objetos.push_back(new NodoDiscoP4());
     objetos.push_back(new LataPeones());
     objetos.push_back(new NodoCubo24());
     
@@ -266,6 +269,7 @@ Escena5::Escena5()
 {
    using namespace std ;
    cout << "Creando objetos de escena 5 .... " << flush ;
+    objetos.push_back(new GrafoEsferasP5());
     objetos.push_back(new VariasLatasPeones());
   
     

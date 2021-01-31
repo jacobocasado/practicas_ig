@@ -129,5 +129,16 @@ public:
     CuadradoRejilla();
 };
 
+class Tetraedro12 : public MallaInd{
+public:
+    Tetraedro12();
+};
+
+class MallaDiscoP4 : public MallaInd{
+    public:
+        MallaDiscoP4();
+};
+
+
 
 #endif

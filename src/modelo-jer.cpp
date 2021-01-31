@@ -8,6 +8,10 @@
 #include <cmath>
 
 Muñeco::Muñeco(const float altura_inicial){
+    Textura * textura = new Textura("../recursos/imgs/text-madera.jpg");
+    agregar(new Material(textura,0.5,0.0,0.2,5.00));
+    ponerNombre ("Muñeco de Jacobo");
+    ponerIdentificador(1);
     const Tupla3f color = {1.0, 1.0, 1.0};
     ponerColor(color);
     unsigned ind1 = agregar(MAT_Traslacion(0.0,altura_inicial,0.0));

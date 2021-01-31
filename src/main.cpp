@@ -333,8 +333,8 @@ void FGE_PulsarLevantarBotonRaton( GLFWwindow* window, int button, int action, i
    // leer la posición del puntero de ratón en x,y (enteros)
    double x_f,y_f ;
    glfwGetCursorPos( window, &x_f, &y_f );
-   const int x = int(x_f) * 2,
-            y = int(y_f) * 2;
+   const int x = int(x_f) * mouse_pos_factor,
+            y = int(y_f) * mouse_pos_factor;
 
    if ( button == GLFW_MOUSE_BUTTON_LEFT )
    {

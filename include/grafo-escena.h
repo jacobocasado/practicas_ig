@@ -157,6 +157,20 @@ public:
     LataCocaCola();
 };
 
+
+class NodoDiscoP4 : public NodoGrafoEscena{
+public:
+    NodoDiscoP4();
+};
+
+class GrafoEsferasP5 : public NodoGrafoEscena{
+public:
+    GrafoEsferasP5();
+};
+
+
+
+
 #endif // GRAFO_ESCENA_HPP
 
 // *********************************************************************

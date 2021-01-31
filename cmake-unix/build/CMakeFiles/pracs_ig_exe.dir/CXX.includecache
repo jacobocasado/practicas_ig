@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../../../p1_p2_p3_p4_p5/include/animacion.h
-objeto3d.h
-../../../p1_p2_p3_p4_p5/include/objeto3d.h
-practicas.h
-../../../p1_p2_p3_p4_p5/include/practicas.h
+../../../p1_p2_p3_p4_p5/include/array-verts.h
+ig-aux.h
+-
 
 ../../../p1_p2_p3_p4_p5/include/camara.h
 tuplasg.h
@@ -25,6 +23,30 @@ vector
 -
 practicas.h
 ../../../p1_p2_p3_p4_p5/include/practicas.h
+
+../../../p1_p2_p3_p4_p5/include/grafo-escena.h
+matrices-tr.h
+../../../p1_p2_p3_p4_p5/include/matrices-tr.h
+objeto3d.h
+../../../p1_p2_p3_p4_p5/include/objeto3d.h
+materiales-luces.h
+../../../p1_p2_p3_p4_p5/include/materiales-luces.h
+
+../../../p1_p2_p3_p4_p5/include/malla-ind.h
+vector
+-
+objeto3d.h
+../../../p1_p2_p3_p4_p5/include/objeto3d.h
+array-verts.h
+../../../p1_p2_p3_p4_p5/include/array-verts.h
+
+../../../p1_p2_p3_p4_p5/include/malla-revol.h
+vector
+-
+string
+-
+malla-ind.h
+../../../p1_p2_p3_p4_p5/include/malla-ind.h
 
 ../../../p1_p2_p3_p4_p5/include/materiales-luces.h
 vector
@@ -53,14 +75,6 @@ cauce.h
 ../../../p1_p2_p3_p4_p5/include/cauce.h
 camara.h
 ../../../p1_p2_p3_p4_p5/include/camara.h
-escena.h
-../../../p1_p2_p3_p4_p5/include/escena.h
-
-../../../p1_p2_p3_p4_p5/include/seleccion.h
-objeto3d.h
-../../../p1_p2_p3_p4_p5/include/objeto3d.h
-practicas.h
-../../../p1_p2_p3_p4_p5/include/practicas.h
 escena.h
 ../../../p1_p2_p3_p4_p5/include/escena.h
 
@@ -174,15 +188,17 @@ tuplasg_impl.h
 
 ../../../recursos/include/tuplasg_impl.h
 
-/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/main.cpp
+/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/grafo-escena.cpp
 ig-aux.h
 /Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/ig-aux.h
-camara.h
-/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/camara.h
-practicas.h
-/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/practicas.h
-seleccion.h
-/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/seleccion.h
-animacion.h
-/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/animacion.h
+matrices-tr.h
+/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/matrices-tr.h
+grafo-escena.h
+/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/grafo-escena.h
+malla-ind.h
+/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/malla-ind.h
+malla-revol.h
+/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/malla-revol.h
+materiales-luces.h
+/Users/jcasado/Library/Mobile Documents/com~apple~CloudDocs/CARRERA/4º AÑO/1º CUATRIMESTRE/IG/Prácticas/materiales-ig/p1_p2_p3_p4_p5/src/materiales-luces.h
 

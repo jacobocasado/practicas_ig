@@ -359,3 +359,49 @@ NodoCubo24::NodoCubo24(){
     agregar(new Material(textura,0.5,0.0,0.2,5.00));
     agregar (new Cubo24());
 }
+
+    
+// La malla disco al ponerla aquí como malla indexada (declarada en grafoescena.h heredando de MallaInd) me daba error al compilar, y para seguir con el examen, la he metido en la clase MallaInd, si no no me daba tiempo.
+
+  NodoDiscoP4::NodoDiscoP4()
+  {
+    ponerNombre("Nodo práctica 4, examen 27 enero");
+    Textura * textura = new Textura("../recursos/imgs/cuadricula.jpg");
+    agregar(new Material(textura,0.5,0.0,0.2,5.00));
+    agregar( new MallaDiscoP4() );
+  }
+
+
+// Práctica 5
+GrafoEsferasP5::GrafoEsferasP5()
+  {
+      const unsigned
+          n_filas_esferas    = 8,
+          n_esferas_x_fila   = 5 ;
+
+      agregar( MAT_Escalado( 2.5/n_esferas_x_fila, 2.5/n_esferas_x_fila, 2.5/n_esferas_x_fila ));
+
+    // i es, por tanto, el contador de la fila.
+      for( unsigned i = 0 ; i < n_filas_esferas ; i++ )
+      {
+          NodoGrafoEscena * fila_esferas = new NodoGrafoEscena() ;
+          fila_esferas->agregar( MAT_Traslacion( 3.0, 0.0, 0.0 ));
+          
+          // j es el contador de la esfera DENTRO DE CADA FILA.
+          for( unsigned j = 0 ; j < n_esferas_x_fila ; j++ )
+          {
+              // He tenido que añadir dos parametros a la esfera porque no tenemos el constructor sin parámetros de esfera
+              MallaInd * esfera = new Esfera(30,30) ;
+              fila_esferas->agregar( MAT_Traslacion( 2.5, 0.0, 0.0 ));
+            // No se si hace falta poner ID, pero lo pongo por si acaso.
+              // SI QUISIESEMOS HACER QUE ESTA SALIDA SEA EN LA FUNCIÓN SELECCIÓN, deberíamos de usar este identificador.
+              esfera->ponerIdentificador((i+1)*(j+1));
+              string nombreEsfera = "Se ha seleccionado la esfera " + to_string(j+1) + " de la fila número " + to_string(i+1) + ".";
+              esfera->ponerNombre (nombreEsfera);
+              fila_esferas->agregar( esfera );
+          }
+          agregar( fila_esferas );
+          agregar( MAT_Rotacion( 360.0/n_filas_esferas, { 0.0, 1.0, 0.0 }));
+      }
+  }
+  
